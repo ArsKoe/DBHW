@@ -2,7 +2,7 @@
     <html>
         <head>
             <meta charset="utf-8">
-            <title>信元大学图书馆系统</title>
+            <title>登录 | 信元大学图书馆系统</title>
             <link rel="shortcut icon" href="db.ico">
         </head>
         <body background="background2.jpg">
@@ -12,21 +12,18 @@
 
         </div>
         <div class="top">
-            <ul>
-               <a href="信元大学login.html">
-                   <li>登录</li>
-                </a>        
-            </ul>
+            
         </div>
         <div class="container">
-            <li>搜索图书馆图书</li>
-           <div id="box">
-               <input type="search" name="search" placeholder="书名，作者名...一搜即得">
+            <li>登录</li>
+            <div id="login">
+                <li>账号</li><input type="text" name="text" placeholder="请输入账号">
             </div>
-            <div id="button-search">
-                <button type="button">搜索</button>
+            <div id="login">
+                <li>密码</li><input type="password" name="password" placeholder="请输入密码">
             </div>
         </div>
+       
         <style>
             
         	.top{
@@ -61,23 +58,45 @@
                 }
             .container{
                 background:-webkit-linear-gradient(top,#177cb0,#d6ecf0);
-                width:1100px;
+                width:500px;
                 height:300px;
-                position:relative;
-                left:11%;
+                position:absolute;
+                left:35%;
                 top:250px;
                 box-shadow:3px 4px 10px 5px #7d7d7d;
                 border-radius:5px;
                 overflow:hidden;
                 }
-            .container li{
+                .container li{
                 list-style-type: none;
                 color:white;
-                font-size: 30px;
-                padding:40px 40px;
+                font-size: 25px;
                 position: absolute;
-                left: 37%;
+                left: 45%;
+                top: 10%;
             }
+            #login{
+                position: relative;
+                box-sizing: border-box;
+                width:500px;
+                height:100px;
+            }
+            #login li{
+                list-style-type: none;
+                position: relative;
+                float: left;
+                font-size:20px;
+                left: 12%;
+                top:100px;
+            }
+            #login input{
+                width: 260px;
+                left: 70px;
+                top:80px;
+                position: relative;
+                margin: 10px;
+            }
+            
             #box{
                 background:red;
                 width:450px;
